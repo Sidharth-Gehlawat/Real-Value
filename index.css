@@ -1,0 +1,321 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #ece8e5;
+    color: #f5f5f5;
+    transition: 500ms;
+    font-size: 1.2em;
+    font-weight: 200;
+}
+.categories{
+    display: flex;
+    background-color:#22333B ;
+    opacity: 0.8;
+    padding: 10px;
+    height: 100px;
+    
+    position: absolute;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+}
+.list ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.list ul li a i{
+    color: white;
+    font-size: 2.75em;
+}
+.list ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 100;
+    padding: 10px;
+    margin: 10px;
+    transition: 300ms;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.list ul li{
+    margin: 20px;
+    text-decoration: none;
+    font-size:10px;
+    font-weight: 100;
+}
+.list :hover{
+    color: rgb(241, 218, 159);
+    font-weight: 100;
+    transition: 200ms;
+}
+.list ul li a span :hover{
+    color: rgb(241, 218, 159);
+    font-weight: 100;
+    transition: 200ms;
+}
+.fixbar{
+    background-color: #22333B;
+    height: 92px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    z-index: 100;
+}
+.logo{
+    width: 25%;
+}
+.logo img{
+    margin-top: 25px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    
+    
+
+}
+.links{
+    width: 50%;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 300;
+    padding: 1em;
+   align-items: center;
+   transition: 200ms;
+   opacity: 0.8;
+   
+}
+.signin{
+    width:15%;
+}
+.signin a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 300;
+    padding: 1em;
+   align-items: center;
+   align-content: center;
+   opacity: 0.8;
+   transition: 200ms;
+}
+.signin i{
+    color: white;
+}
+
+.links a:hover{
+    /* color: rgb(228, 171, 217); */
+    color: rgb(241, 218, 159);
+    font-weight: 100;
+    transition: 200ms;
+}
+.links a:active{
+    color:white;
+}
+.signin a:hover{
+    /* color: rgb(228, 171, 217); */
+    color: rgb(241, 218, 159);
+    font-weight: 100;
+    transition: 200ms;
+}
+.signin i:hover{
+    /* color: rgb(228, 171, 217); */
+    color: rgb(241, 218, 159);
+    
+}
+.home {
+    height:560px;
+    width: 100%;
+    background-image: url("./Assets/image\ copy");
+    background-color: #5A3362;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.search{
+    display:flex;
+    background-color:rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 80em;
+    height:10em;
+    border-radius: 8px;
+    text-decoration: none;
+    border:none;
+    
+}
+.searchbar{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin:0px; 
+    
+}
+.typehere input{
+    height:38px;
+    width: 43em;
+    color:#fff;
+    border-radius: 10px;  
+    text-decoration: none;
+    color: black;
+    padding-left: 15px;
+    font-size: 1.25em;
+    border: none;
+    transition: 200ms;
+    outline: none;
+
+}
+.typehere input::placeholder{
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 20px;
+    margin: 5px;
+    color: grey;
+}
+.typehere input:hover{
+   
+    border-radius: 18px;
+}
+.typehere input:active{
+    border-radius: 18px;
+}
+.searchbutton button{
+    height:39px;
+    width: 8em;
+    font-size: .85em;
+    color: white;
+    background-color: #c6ab7c;
+    text-decoration: none;
+    border: none;
+    border-radius:8px;
+    margin: 30px;
+    transition: 200ms;
+    cursor: pointer;
+    
+}
+.searchbutton button:hover{
+    background-color: #C6AC8E;
+    color: white;
+    height:41px;
+    width: 8.1em;
+    box-shadow: 10px #f5f5f5;
+    border-radius:18px;
+}
+.searchbutton button:active{
+    background-color: white;
+    color: black;
+    height:41px;
+    width: 8.1em;
+    box-shadow: 10px #f5f5f5;
+    border-radius:18px;
+}
+.searchbutton  i{
+    color:white;
+}
+.property_type button{
+    height:39px;
+    width: 8em;
+    background-color: white;
+    text-decoration: none;
+    border: none;
+    /* margin:1px; */
+    border-top-right-radius: 10px;  
+    border-bottom-right-radius: 10px;
+    text-decoration: none;
+
+    /* border-top-left-radius: 3px;  
+    border-bottom-left-radius: 3px;  */
+}
+.heading h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 3em;
+    padding: .5em;
+    border-radius: 50px;
+    text-shadow:  black 5px 0 15px;;
+   
+}
+.list li{
+    list-style: none; 
+    padding: 0px;
+    margin: 0px;
+    
+}
+.list li a{
+    text-decoration: none;
+    color: #f5f5f5;
+}
+.insight_tools{
+    color: #0f0529;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.forcoustmer{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+#h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#card{
+    background-color: #0A0908;
+    height: 20em;
+    width: 20em;
+    border: 2px solid #f5f5f5;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+}
+#card:hover{
+    background-color: #f5f5f5;
+    color: #0A0908;
+    transition: 600ms;
+   height: 20.5em;
+   width: 20.5em;
+}
+.footer{
+    width: fill-available;
+    height: 100%;
+    background-color: #0A0908;
+    padding: 20px;
+    
+}
+.followus i{
+    color: white;
+    
+}
+
+/* Hide the content initially */
+.content {
+    display: none;
+}
