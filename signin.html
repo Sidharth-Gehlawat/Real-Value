@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>Sign-in to Real Value</title>
+    <link rel="icon" href="./Assets/Gold  Black Home Icon Real Estate Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="signin.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+   <div class="wrapper">
+    
+    <div >
+    <form action="" >
+        <img class="logo" src="./Assets/Gold  Black Home Icon Real Estate Logo.png" alt="">
+        <h1>Login</h1>
+        
+        <div class="telephone">
+            <img src="./Assets/india.png" alt="India Flag">
+            <span>+91</span>
+            <input type="tel" id="phone" placeholder="Enter phone number" maxlength="10" oninput="this.value = this.value.replace(/\D/g, '')">     
+        </div>   
+        <button type="submit" class="btn" onclick="login()">Login </button>
+    </form>
+</div>
+   </div>
+     <script>
+        function login() {
+            let phone = document.getElementById("phone").value;
+            if (phone.length === 10) {
+                alert("Logging in with: " + phone);
+            } else {
+                alert("Please enter a valid 10-digit phone number.");
+            }
+        }
+    </script>
+</body>
+</html>
